@@ -21,8 +21,8 @@ client.placeholder	#666666	#1a1a1a	#b3b3b3	#4d4d4d	   #4d4d4d
 client.background	#0d0d0d
 
 exec_always --no-startup-id picom -b
-
-exec_always --no-startup-id feh --bg-scale ~/.config/backgrounds/a_room_with_a_desk_and_a_chair_and_a_skull_on_the_wall.jpg
+exec_always --no-startup-id feh --bg-scale ~/.config/backgrounds/a_car_parked_in_a_street.jpg
+exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart

@@ -22,7 +22,7 @@ client.background	#0d0d0d
 
 exec_always --no-startup-id picom -b
 
-exec_always --no-startup-id feh --bg-scale ~/.config/i3/jpl6znwmnxs31-D84D5.png
+exec_always --no-startup-id feh --bg-scale ~/.config/backgrounds/a_room_with_a_desk_and_a_chair_and_a_skull_on_the_wall.jpg
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -51,13 +51,13 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+c kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id rofi -show run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a

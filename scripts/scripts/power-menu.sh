@@ -8,22 +8,22 @@ chosen=$(echo -e "$options" | tr '[:upper:]' '[:lower:]' | rofi -dmenu -p "")
 
 # Execute the selected action
 case "$chosen" in
-    "Power Off")
+    "power off")
         systemctl poweroff
         ;;
-    "Reboot")
+    "reboot")
         systemctl reboot
         ;;
-    "Suspend")
+    "suspend")
         systemctl suspend
         ;;
-    "Hibernate")
+    "hibernate")
         systemctl hibernate
         ;;
-    "Logout")
+    "logout")
         pkill -KILL -u $USER
         ;;
-    "Lock")
+    "lock")
         i3lock || betterlockscreen -l || slock
         ;;
     *)

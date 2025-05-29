@@ -1,6 +1,6 @@
 configuration {
 	modi: "drun";
-	display-run: " ";
+	display-drun: " ";
 	icon-theme: "Papirus-Light";
 	fixed-num-lines: false;
 	font: "SpaceMono Nerd Font 12";

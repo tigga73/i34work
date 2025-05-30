@@ -3,29 +3,27 @@ set $mod Mod4
 font SpaceMono Nerd Font
 
 #gaps
-gaps inner 8px
-gaps outer 5px
+# gaps inner 8px
+# gaps outer 5px
 
 #remove titlebar
 for_window [class="^.*"] border pixel 2
 
 #theme
-#target			title	bg	text	indicator  border
-client.focused		#e6e6e6	#e6e6e6	#1a1a1a	#ffffff	   #e6e6e6
+#target			            title	  bg	    text	  indicator  border
+client.focused		      #e6e6e6	#e6e6e6	#1a1a1a	#ffffff	   #e6e6e6
 client.focused_inactive #b3b3b3	#1a1a1a	#d9d9d9	#999999    #4d4d4d
-client.unfocused	#999999	#1a1a1a	#bfbfbf	#666666    #333333
-client.urgent		#f2f2f2	#1a1a1a	#ff3333	#ff3333	   #f2f2f2
-client.placeholder	#666666	#1a1a1a	#b3b3b3	#4d4d4d	   #4d4d4d
-client.background	#0d0d0d
+client.unfocused	      #999999	#1a1a1a	#bfbfbf	#666666    #333333
+client.urgent		        #f2f2f2	#1a1a1a	#ff3333	#ff3333	   #f2f2f2
+client.placeholder	    #666666	#1a1a1a	#b3b3b3	#4d4d4d	   #4d4d4d
+client.background	      #0d0d0d
 
 exec_always --no-startup-id picom -b
 exec_always --no-startup-id feh --bg-scale ~/.config/backgrounds/a_car_parked_in_a_street.jpg
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec_always --no-startup-id ~/scripts/polybar.sh
-# monitor config
-exec_always --no-startup-id xrandr --output eDP-1 --off --output DP-2 --auto
-
-# use only the second monitor
+# monitor config - starts using only the second monitor
+# exec_always --no-startup-id xrandr --output eDP-1 --off --output DP-2 --auto
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart

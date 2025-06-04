@@ -3,8 +3,8 @@ set $mod Mod4
 font SpaceMono Nerd Font
 
 #gaps
-# gaps inner 8px
-# gaps outer 5px
+gaps inner 8px
+gaps outer 4px
 
 #remove titlebar
 for_window [class="^.*"] border pixel 2
@@ -23,7 +23,7 @@ exec_always --no-startup-id feh --bg-scale ~/.config/backgrounds/a_car_parked_in
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec_always --no-startup-id ~/scripts/polybar.sh
 # monitor config - starts using only the second monitor
-# exec_always --no-startup-id xrandr --output eDP-1 --off --output DP-2 --auto
+exec_always --no-startup-id xrandr --output eDP-1 --auto --output DP-2 --auto --above eDP-1
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -49,7 +49,7 @@ floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
-# tiling_drag modifier titlebar
+tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec kitty

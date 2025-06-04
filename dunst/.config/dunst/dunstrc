@@ -1,6 +1,7 @@
 [global]
     monitor = 0
     follow = keyboard
+    width = (0, 300)
     height = 60
     origin = top-right
     offset = (10, 10)

@@ -1,7 +1,8 @@
 [global]
     monitor = 0
     follow = keyboard
-    height = 60
+    width = (0, 300)
+    height = (0, 60)
     origin = top-right
     offset = (10, 10)
     scale = 0
@@ -22,7 +23,7 @@
     separator_color = frame
     sort = no
     idle_threshold = 0
-    font = Iosevka Term 11
+    font = SpaceMono Nerd Font
     line_height = 3
     markup = full
 
